@@ -234,7 +234,7 @@ docker-compose exec app php artisan route:clear
 docker-compose exec app php artisan view:clear
 ```
 
-## 📝 Sample Data
+##  Sample Data
 
 The database includes:
 - 3 users (1 admin, 2 cashiers)
