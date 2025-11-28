@@ -59,23 +59,23 @@ docker-compose exec app chown -R www-data:www-data /var/www/storage
 docker-compose exec app chown -R www-data:www-data /var/www/bootstrap/cache
 ```
 
-## 🌐 Access Points
+##  Access Points
 
 - **Laravel API**: http://localhost:8000
 - **phpMyAdmin**: http://localhost:8080
   - Server: `db`
   - Username: `heen_user`
-  - Password: `heen_password`
+  - Password: `****`
 
-## 🔐 Default Accounts
+##  Default Accounts
 
 | Role | Email | Password |
 |------|-------|----------|
-| Admin | admin@heencoffee.com | admin |
-| Cashier | cashier@heencoffee.com | cashier |
-| Cashier | john@heencoffee.com | password |
+| Admin | admin@heencoffee.com | **** |
+| Cashier | cashier@heencoffee.com | **** |
+| Cashier | john@heencoffee.com | **** |
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Authentication
 - `POST /api/login` - User login
@@ -116,7 +116,7 @@ docker-compose exec app chown -R www-data:www-data /var/www/bootstrap/cache
 - `POST /api/inventory/{id}/adjust` - Adjust stock
 - `GET /api/inventory/alerts/low-stock` - Low stock alerts
 
-## 🧪 Testing the API
+##  Testing the API
 
 ### Login Example
 ```bash
@@ -131,7 +131,7 @@ curl -X GET http://localhost:8000/api/products \
   -H "Authorization: Bearer YOUR_TOKEN_HERE"
 ```
 
-## 📊 Database Schema
+##  Database Schema
 
 ### Tables
 1. **users** - User accounts with roles
@@ -144,7 +144,7 @@ curl -X GET http://localhost:8000/api/products \
 8. **inventory_items** - Stock items
 9. **inventory_logs** - Stock movement history
 
-## 🛠️ Common Commands
+##  Common Commands
 
 ### Docker Commands
 ```bash
@@ -185,7 +185,7 @@ php artisan make:migration create_example_table
 php artisan make:controller ExampleController
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 myproject/
@@ -205,7 +205,7 @@ myproject/
 └── .env                      # Environment variables
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Database Connection Issues
 ```bash
@@ -243,21 +243,21 @@ The database includes:
 - 7 toppings
 - 10 inventory items
 
-## 🔄 Reset Database
+##  Reset Database
 
 To start fresh:
 ```bash
 docker-compose exec app php artisan migrate:fresh --seed
 ```
 
-## 🎉 Next Steps
+##  Next Steps
 
 1. Test the API endpoints using Postman or curl
 2. Connect your frontend application
 3. Customize the products and categories
 4. Add more features as needed
 
-## 📚 Documentation
+##  Documentation
 
 - [Laravel Documentation](https://laravel.com/docs)
 - [Laravel Sanctum](https://laravel.com/docs/sanctum)
@@ -265,4 +265,4 @@ docker-compose exec app php artisan migrate:fresh --seed
 
 ---
 
-**Built with Laravel 11 + MySQL 8.0 + Docker 🚀**
+**Built with Laravel 11 + MySQL 8.0 + Docker �**
