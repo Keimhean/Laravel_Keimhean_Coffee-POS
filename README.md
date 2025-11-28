@@ -1,18 +1,18 @@
-# 🎯 HEEN COFFEE POS - Complete Backend Setup
+#  HEEN COFFEE POS - Complete Backend Setup
 
 A complete Laravel-based Point of Sale (POS) system for coffee shops with Docker, MySQL, and phpMyAdmin.
 
-## ✨ Features
+##  Features
 
-- 🔐 **Authentication**: Role-based access (Admin/Cashier) with Laravel Sanctum
-- 📦 **Product Management**: Categories, products, toppings with sizes & temperatures
-- 🛒 **Order System**: Complete order processing with discount support
-- 📊 **Analytics**: Sales reports and top products tracking
-- 📦 **Inventory**: Stock management with low-stock alerts
-- 🐳 **Docker**: Fully containerized with Docker Compose
-- 💾 **Database**: MySQL 8.0 with phpMyAdmin interface
+-  **Authentication**: Role-based access (Admin/Cashier) with Laravel Sanctum
+-  **Product Management**: Categories, products, toppings with sizes & temperatures
+-  **Order System**: Complete order processing with discount support
+-  **Analytics**: Sales reports and top products tracking
+-  **Inventory**: Stock management with low-stock alerts
+-  **Docker**: Fully containerized with Docker Compose
+-  **Database**: MySQL 8.0 with phpMyAdmin interface
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Docker Desktop installed
