@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from '../context/ThemeContext';
-import { Search, Eye, Printer } from 'lucide-react';
+import { Eye, Printer } from 'lucide-react';
 import { OrderDetailsModal } from '../components/OrderDetailsModal';
 import api from '../utils/api';
+import { SearchBar } from '../components/SearchBar';
 
 export function Orders() {
   const [orders, setOrders] = useState<any[]>([]);
@@ -164,15 +165,8 @@ export function Orders() {
       </div>
 
       <div className={`p-6 ${dark ? 'text-gray-200' : ''}`}>
-        <div className="relative mb-6">
-          <Search className={`absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 ${dark ? 'text-gray-500' : 'text-gray-400'}`} />
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search by order ID or customer name..."
-            className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#FF9D6F] focus:border-transparent transition-colors ${dark ? 'bg-gray-900 border-gray-800 text-gray-100 placeholder-gray-500' : 'border-gray-300'}`}
-          />
+        <div className="mb-6">
+          <SearchBar value={searchQuery} onChange={setSearchQuery} />
         </div>
 
         {loading ? (

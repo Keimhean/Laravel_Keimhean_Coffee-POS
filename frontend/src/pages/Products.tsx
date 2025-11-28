@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Plus, Edit2, Trash2, Search } from 'lucide-react';
+import { Plus, Edit2, Trash2 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import api from '../utils/api';
+import { SearchBar } from '../components/SearchBar';
 
 interface Product {
   id: number;
@@ -143,7 +144,7 @@ export function Products() {
       price: '',
       category_id: '',
       image: '',
-      status: 'available',
+      is_active: true,
     });
   };
 
@@ -161,15 +162,8 @@ export function Products() {
       </div>
 
       <div className="p-6">
-        <div className="relative mb-6">
-          <Search className={`absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 ${dark ? 'text-gray-500' : 'text-gray-400'}`} />
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search products..."
-            className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#FF9D6F] focus:border-transparent ${dark ? 'bg-gray-800 border-gray-700 text-white placeholder-gray-400' : 'bg-white border-gray-300 text-gray-900'}`}
-          />
+        <div className="mb-6">
+          <SearchBar value={searchQuery} onChange={setSearchQuery} />
         </div>
 
         {loading ? (
