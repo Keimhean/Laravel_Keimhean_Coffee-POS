@@ -1,4 +1,8 @@
 #  HEEN COFFEE POS - Complete Backend Setup
+[![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)](https://www.php.net/)
+[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white)](https://laravel.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Docker MySQL phpMyAdmin](https://img.shields.io/badge/Docker_MySQL_phpMyAdmin-2496ED?logo=docker&logoColor=white)](https://hub.docker.com/_/phpmyadmin)
 
 A complete Laravel-based Point of Sale (POS) system for coffee shops with Docker, MySQL, and phpMyAdmin.
 
