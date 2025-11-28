@@ -71,9 +71,9 @@ docker-compose exec app chown -R www-data:www-data /var/www/bootstrap/cache
 
 | Role | Email | Password |
 |------|-------|----------|
-| Admin | admin@heencoffee.com | **** |
-| Cashier | cashier@heencoffee.com | **** |
-| Cashier | john@heencoffee.com | **** |
+| Admin | xxx@example.com | **** |
+| Cashier | xxx@example.com | **** |
+| Cashier | xxx@example.com| **** |
 
 ##  API Endpoints
 
