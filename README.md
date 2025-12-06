@@ -263,4 +263,4 @@ docker-compose exec app php artisan migrate:fresh --seed
 
 ---
 
-**Built with Laravel 11 + MySQL 8.0 + Docker �**
+**Built with Laravel 11 + MySQL 8.0 + Docker **
